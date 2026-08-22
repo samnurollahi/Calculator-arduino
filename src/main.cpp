@@ -15,8 +15,14 @@ Keypad keypad(makeKeymap(keys), rowPins, colPins, 3, 4);
 
 void setup()
 {
+  Serial.begin(9600);
 }
 
 void loop()
 {
+  char key = keypad.getKey();
+  if (key)
+  {
+    Serial.println(key)
+  }
 }
