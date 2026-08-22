@@ -9,7 +9,9 @@ char keys[4][3] = {
 };
 
 byte rowPins[3] = {6, 7, 8};
-byte colPins[3] = {2, 3, 4, 9};
+byte colPins[4] = {2, 3, 4, 9};
+
+Keypad keypad(makeKeymap(keys), rowPins, colPins, 3, 4);
 
 void setup()
 {
