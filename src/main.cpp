@@ -8,6 +8,9 @@ char keys[4][3] = {
     {'*', '0', '#'},
 };
 
+byte rowPins[3] = {6, 7, 8};
+byte colPins[3] = {2, 3, 4, 9};
+
 void setup()
 {
 }
