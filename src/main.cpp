@@ -1,7 +1,7 @@
 #include <Keypad.h>
 
-const byte ROWS = 4;
-const byte COLS = 3;
+#define ROWS 4
+#define COLS 3
 
 char keys[ROWS][COLS] = {
     {'1', '2', '3'},
